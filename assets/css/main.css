@@ -83,7 +83,7 @@ input, select, textarea {
 	}
 
 	body {
-		background: #fff;
+		background: #262626;
 	}
 
 		body.is-preload *, body.is-preload *:before, body.is-preload *:after {
@@ -98,7 +98,7 @@ input, select, textarea {
 		}
 
 	body, input, select, textarea {
-		color: #a2a2a2;
+		color: #fdfdfd;
 		font-family: "Source Sans Pro", Helvetica, sans-serif;
 		font-size: 16pt;
 		font-weight: 400;
@@ -2635,18 +2635,34 @@ input, select, textarea {
 			letter-spacing: 0.6rem;
 		}
 
-		#header h2, #header h3, #header h4, #header h5, #header h6 {
+		#header h3, #header h4, #header h5, #header h6 {
 			color: #ffffff;
 		}
 
+
+
 		#header h1 {
-			color: #fff12a;
+			color: #fff;
 			font-size: 1.35em;
 			line-height: 1.75em;
 			padding-bottom: 0px;
 			text-align: center;
 			letter-spacing: 0.1em;
 			margin: 0;
+		}
+
+		#header h2 {
+			font-family: "Dank Mono", ui-monospace, monospace;
+			color: #fff12a;
+			text-shadow: 1px 1px 1px black,
+			1px 1px 1px black;
+			font-size: 1.35em;
+			line-height: 1.75em;
+			padding-bottom: 0px;
+			text-align: center;
+			letter-spacing: 0.1em;
+			margin: 0;
+			
 		}
 
 		#header .image.avatar {
@@ -2659,7 +2675,7 @@ input, select, textarea {
 /* Footer */
 
 	#footer .icons {
-		margin: 6em 8.5em 0 0;
+		margin: 6em 9.5em 0 0;
 	}
 
 		#footer .icons a {
@@ -2710,17 +2726,39 @@ input, select, textarea {
 		width: calc(100% - 35%);
 	}
 
-		#main > section {
-			border-top: solid 2px #efefef;
-			margin: 4em 0 0 0;
-			padding: 4em 0 0 0;
-		}
+	#main > section {
+		border-top: solid 5px #fff017;
+		margin: 4em 0 0 0;
+		padding: 4em 0 0 0;
+	}
 
-			#main > section:first-child {
-				border-top: 0;
-				margin-top: 0;
-				padding-top: 0;
-			}
+	#main > section:first-child {
+		border-top: 0;
+		margin-top: 0;
+		padding-top: 0;
+	}
+
+	#main .major h1{
+		letter-spacing: 0.1em;
+		margin: 0 2em 0 5em;
+		text-shadow: 1px;
+		color: #FFFAF0;
+	}		
+
+	#main .major h1 strong{
+		text-shadow: 1px;
+		color: #ffd001;
+		text-transform:capitalize;
+	}	
+
+	#main .ttt .list{
+		list-style-type: circle yellow;	
+	}
+
+	#main .ttt .list ul li::before {
+		content: "\200B";
+	  }
+
 
 /* Poptrox */
 
