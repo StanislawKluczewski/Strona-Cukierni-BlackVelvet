@@ -2738,7 +2738,7 @@ input, select, textarea {
 		padding-top: 0;
 	}
 
-	#main .major h1{
+	#main .ttt .major h1{
 		letter-spacing: 0.1em;
 		margin: 0 2em 0 5em;
 		text-shadow: 1px;
@@ -2746,18 +2746,47 @@ input, select, textarea {
 	}		
 
 	#main .major h1 strong{
-		text-shadow: 1px;
 		color: #ffd001;
-		text-transform:capitalize;
 	}	
 
+
+
 	#main .ttt .list{
-		list-style-type: circle yellow;	
+		list-style-image: url(images/star.jpg);	
+		color: #e8e9d5;;
 	}
 
-	#main .ttt .list ul li::before {
-		content: "\200B";
-	  }
+	#main .ttt .list :hover{
+		list-style-image: url(images/star.jpg);	
+		color: black;
+		text-transform:initial;
+		background-color: #ffd001;
+		width:fit-content;
+	}
+
+	#one  h1{
+		color: #ffd001;
+		letter-spacing:0.1em;
+		text-align: left;
+		font-size: 45px
+	}
+
+	#two h2{
+		color: #ffd001;
+		letter-spacing:0.1em;
+		text-align: center;
+		font-size: 45px
+	}
+	
+
+	#three h2{
+		color: #ffd001;
+		letter-spacing:0.1em;
+		text-align: center;
+		font-size: 45px
+	}
+
+
 
 
 /* Poptrox */
