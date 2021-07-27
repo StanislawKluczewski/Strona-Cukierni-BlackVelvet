@@ -83,7 +83,7 @@ input, select, textarea {
 	}
 
 	body {
-		background: #262626;
+		background: #181717;
 	}
 
 		body.is-preload *, body.is-preload *:before, body.is-preload *:after {
@@ -98,7 +98,7 @@ input, select, textarea {
 		}
 
 	body, input, select, textarea {
-		color: #fdfdfd;
+		color: #f8f8f8;
 		font-family: "Source Sans Pro", Helvetica, sans-serif;
 		font-size: 16pt;
 		font-weight: 400;
@@ -111,15 +111,17 @@ input, select, textarea {
 		-ms-transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out;
 		transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out;
 		border-bottom: dotted 1px;
-		color: #49bf9d;
+		color: #d9fc5e;
 		text-decoration: none;
 	}
 
 		a:hover {
 			border-bottom-color: transparent;
-			color: #49bf9d !important;
+			color: #e745da !important;
 			text-decoration: none;
 		}
+
+		a
 
 	strong{
 		color: #787878;
@@ -2469,8 +2471,8 @@ input, select, textarea {
 		input[type="reset"]:hover,
 		input[type="button"]:hover,
 		.button:hover {
-			border-color: #49bf9d;
-			color: #49bf9d !important;
+			border-color: #fce728;
+			color: #fce728 !important;
 		}
 
 		input[type="submit"]:active,
@@ -2478,8 +2480,8 @@ input, select, textarea {
 		input[type="button"]:active,
 		.button:active {
 			background-color: rgba(73, 191, 157, 0.1);
-			border-color: #49bf9d;
-			color: #49bf9d !important;
+			border-color: #fce728;
+			color: #fce728 !important;
 		}
 
 		input[type="submit"].icon,
@@ -2592,24 +2594,24 @@ input, select, textarea {
 		-webkit-align-items: -webkit-flex-end;
 		-ms-align-items: -ms-flex-end;
 		align-items: flex-end;
-		-moz-justify-content: space-between;
-		-webkit-justify-content: space-between;
-		-ms-justify-content: space-between;
-		justify-content: space-between;
-		background-color: #1f1815;
-		background-attachment: scroll,								scroll;
-		background-image: url("images/overlay.png"), url("../../images/bg.jpg");
-		background-position: top left,							top left;
-		background-repeat: repeat,								no-repeat;
-		background-size: auto,								150%;
-		color: rgba(255, 255, 255, 0.5);
+		background-position: left;
+		background-repeat: no-repeat;
+		background-attachment:inherit;
 		height: 100%;
+		background-size: 100%;
+		color: rgba(255, 255, 255, 0.5);
+		background-color: #1f1815;
+		background-image: url("../../images/golden-leaves.jpg");
+		height:100%;
 		left: 0;
 		padding: 8em 4em;
 		position: fixed;
 		text-align: right;
 		top: 0;
 		width: 35%;
+		border: rgba(255, 230, 0, 0.979);
+		border-style: solid;
+		border-radius: 16px 16px 16px 16px;
 	}
 
 		#header > * {
@@ -2771,13 +2773,7 @@ input, select, textarea {
 		font-size: 45px
 	}
 
-	#two h2{
-		color: #ffd001;
-		letter-spacing:0.1em;
-		text-align: center;
-		font-size: 45px
-	}
-	
+
 
 	#three h2{
 		color: #ffd001;
@@ -2788,6 +2784,21 @@ input, select, textarea {
 
 
 
+	/* Section two */
+
+	#two h2{
+		color: #ffd001;
+		letter-spacing:0.1em;
+		text-align: center;
+		font-size: 45px
+	}
+	
+	#two h3{
+		color: #ffd001;
+		letter-spacing:0.05em;
+		text-align: center;
+		font-size: 30px
+	}
 
 /* Poptrox */
 
