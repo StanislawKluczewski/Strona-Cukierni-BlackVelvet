@@ -2596,11 +2596,10 @@ input, select, textarea {
 		align-items: flex-end;
 		background-position: left;
 		background-repeat: no-repeat;
-		background-attachment:inherit;
 		height: 100%;
 		background-size: 100%;
 		color: rgba(255, 255, 255, 0.5);
-		background-color: #1f1815;
+		background-color: #252321;
 		background-image: url("../../images/golden-leaves.jpg");
 		height:100%;
 		left: 0;
@@ -2669,7 +2668,8 @@ input, select, textarea {
 
 		#header .image.avatar {
 			width: 12.5em;
-			margin: 0 7.5rem 1.5em 0;
+			position:center;
+			margin: 0 6rem 1.5em 0;
 		}
 
 
@@ -2677,7 +2677,7 @@ input, select, textarea {
 /* Footer */
 
 	#footer .icons {
-		margin: 6em 9.5em 0 0;
+		margin: 6em 10.5em 0 0;
 	}
 
 		#footer .icons a {
@@ -2693,11 +2693,11 @@ input, select, textarea {
 		}
 
 	#footer .copyright{
-		color: rgba(255, 255, 255, 0.938);
+		color: rgba(255, 255, 255, 0.8);
 		letter-spacing: 0.05em;
 		font-size: 1em;
 		list-style: none;
-		margin: 1em 3em 1em 0;
+		margin: 1em 3.5em 1em 0;
 
 	}
 
@@ -2742,10 +2742,28 @@ input, select, textarea {
 
 	#main .ttt .major h1{
 		letter-spacing: 0.1em;
-		margin: 0 2em 0 5em;
-		text-shadow: 1px;
+		margin:auto;
 		color: #FFFAF0;
 	}		
+
+	#main .ttt .major{
+		letter-spacing: 0.1em;
+		margin:auto;
+		color: #FFFAF0;
+	}	
+
+
+	#main .ttt .major h1{
+		letter-spacing: 0.1em;
+		margin: 0 2em 0 2.5em;
+		color: #FFFAF0;
+	}	
+
+	
+	#main .ttt p{
+		font-size: 20px;
+	}	
+
 
 	#main .major h1 strong{
 		color: #ffd001;
@@ -2754,16 +2772,15 @@ input, select, textarea {
 
 
 	#main .ttt .list{
-		list-style-image: url(images/star.jpg);	
-		color: #e8e9d5;;
+		color: rgb(255, 255, 255);;
 	}
 
 	#main .ttt .list :hover{
-		list-style-image: url(images/star.jpg);	
 		color: black;
 		text-transform:initial;
 		background-color: #ffd001;
 		width:fit-content;
+		cursor:pointer;
 	}
 
 	#one  h1{
@@ -3068,7 +3085,7 @@ input, select, textarea {
 	}
 
 	body.is-touch #header {
-		background-attachment: scroll;
+		background-attachment:scroll;
 		background-size: auto, cover;
 	}
 
@@ -3203,7 +3220,7 @@ input, select, textarea {
 						display: inline-block;
 						line-height: 1em;
 						margin-left: 0.75em;
-						padding-left: 0.75em;
+						padding-left: 0.5em;
 					}
 
 		/* Main */
