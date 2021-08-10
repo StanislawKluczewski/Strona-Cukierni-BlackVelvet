@@ -124,7 +124,7 @@ input, select, textarea {
 		a
 
 	strong{
-		color: #787878;
+		color: #fafafa;
 		letter-spacing: 0.6rem;			/* szerokosc nazwy*/
 		font-weight: 700;
 		text-align: center;
@@ -139,7 +139,7 @@ input, select, textarea {
 	}
 
 	h1, h2, h3, h4, h5, h6 {
-		color: #787878;
+		color: #e4e4e4;
 		font-weight: 400;
 		line-height: 1em;
 		margin: 0 0 1em 0;
@@ -302,6 +302,7 @@ input, select, textarea {
 		box-sizing: border-box;
 		align-items: stretch;
 	}
+
 
 		.row > * {
 			box-sizing: border-box;
@@ -2005,7 +2006,79 @@ input, select, textarea {
 			padding: 0;
 		}
 
+
+/* Contact Section */
+
+#contact .contact
+{
+    flex-direction: column;
+    padding: 100px 0;
+    align-items: center;
+    justify-content: center;
+    min-width: 100px;
+}
+
+#contact .contact-items
+{
+    width: 100%;
+	display: flex;
+	justify-content: center;
+	text-align: center;
+    margin: auto;
+}
+
+#contact .contact-item
+{
+      
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    padding: 30px;
+    margin: 30px;
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+	text-align: center;
+    box-shadow: 0px 0px 18px 0 #ffd001;
+    transition: .3s ease box-shadow;
+}
+
+
+.contact-item:hover
+{
+    box-shadow: 0px 0px 5px 0 #00002c;
+}
+
+.contact-item .icon
+{
+    width: 100px;
+    margin: 0 auto;
+    padding-bottom: 10px;
+	display: flex;
+	justify-content: center;
+	text-align: center;
+}
+
+
+.contact-item h3{
+    font-size: 1.5rem;
+    line-height: 2rem;
+    font-weight: 500;
+	text-align: center;
+	color:#ffd001;
+}
+
+
+
 /* Icon */
+
+	.col-4.col-12-small{
+		font-size: 20px;
+		display: flex;
+		justify-content: center;
+	}
+
 
 	.icon {
 		text-decoration: none;
@@ -2042,6 +2115,7 @@ input, select, textarea {
 			font-family: 'Font Awesome 5 Brands';
 		}
 
+
 /* Image */
 
 	.image {
@@ -2058,6 +2132,7 @@ input, select, textarea {
 			transition: opacity 0.2s ease-in-out;
 			background: url("images/overlay.png");
 			border-radius: 0.35em;
+			color: #181717;
 			content: '';
 			display: block;
 			height: 100%;
@@ -2078,8 +2153,8 @@ input, select, textarea {
 				-ms-transition: opacity 0.2s ease-in-out;
 				transition: opacity 0.2s ease-in-out;
 				border-radius: 0.35em;
-				border: solid 3px rgba(255, 255, 255, 0.5);
-				color: #fff;
+				border: solid 3px rgba(255, 244, 86, 0.966);
+				color: rgba(255, 244, 86, 0.966);
 				content: 'View';
 				display: inline-block;
 				font-size: 0.8em;
@@ -2103,6 +2178,7 @@ input, select, textarea {
 			.image.thumb:hover:before {
 				background: url("images/overlay.png"), url("images/overlay.png");
 				opacity: 1.0;
+
 			}
 
 		.image img {
@@ -2145,12 +2221,18 @@ input, select, textarea {
 		}
 
 			.image.avatar:before {
-				display: none;
+				display: flex;
+				justify-content: center;
 			}
 
 			.image.avatar img {
 				border-radius: 100%;
 				width: 100%;
+			}
+
+
+			.image h3{
+				color: #d9fc5e;
 			}
 
 /* List */
@@ -2253,6 +2335,7 @@ input, select, textarea {
 		display: -webkit-flex;
 		display: -ms-flex;
 		display: flex;
+		justify-content: center;
 		cursor: default;
 		list-style: none;
 		margin-left: -1em;
@@ -2261,7 +2344,9 @@ input, select, textarea {
 
 		ul.actions li {
 			padding: 0 0 0 1em;
-			vertical-align: middle;
+			display: flex;
+			justify-content: center;
+			text-align: center;
 		}
 
 		ul.actions.special {
@@ -2479,7 +2564,7 @@ input, select, textarea {
 		input[type="reset"]:active,
 		input[type="button"]:active,
 		.button:active {
-			background-color: rgba(73, 191, 157, 0.1);
+			background-color: rgba(241, 241, 241, 0.884);
 			border-color: #fce728;
 			color: #fce728 !important;
 		}
@@ -2554,7 +2639,7 @@ input, select, textarea {
 		.button:disabled {
 			background-color: #e7e7e7 !important;
 			border-color: #e7e7e7 !important;
-			color: #b2b2b2 !important;
+			color: #ffffff !important;
 			cursor: default;
 		}
 
@@ -2569,14 +2654,17 @@ input, select, textarea {
 		}
 
 		.work-item h3 {
-			font-size: 1em;
+			font-size: 20px;
 			margin: 0 0 0.5em 0;
 		}
 
-		.work-item p {
-			font-size: 0.8em;
+		.work-item p{
+			font-size: 20px;
+			font-weight: bold;
+			letter-spacing: 0.005em;
+			font-weight: 5px;
 			line-height: 1.5em;
-			margin: 0;
+			text-align: center;
 		}
 
 /* Header */
@@ -2667,17 +2755,28 @@ input, select, textarea {
 		}
 
 		#header .image.avatar {
-			width: 12.5em;
-			position:center;
-			margin: 0 6rem 1.5em 0;
+			width: 60%;
+			display: flex;
+			text-align: center;
+			align-items: center;
+			justify-content: center;
+			padding-bottom: 50px;
+			margin: auto;
 		}
 
 
 
 /* Footer */
 
+#footer{
+	text-align: center;
+}
+
 	#footer .icons {
-		margin: 6em 10.5em 0 0;
+		padding-top: 50px;
+		padding-bottom: 0px;
+		display: flex;
+		justify-content: center;
 	}
 
 		#footer .icons a {
@@ -2687,22 +2786,22 @@ input, select, textarea {
 
 		#footer strong{
 			font-size: 0.5em;
-			text-align: left;
+			text-align: center;
 			justify-content: center;
-			padding-bottom: 20px;
+			padding-bottom: 10px;
 		}
 
 	#footer .copyright{
-		color: rgba(255, 255, 255, 0.8);
-		letter-spacing: 0.05em;
+		color: rgb(248, 247, 245);
+		letter-spacing: 0.1em;
 		font-size: 1em;
-		list-style: none;
-		margin: 1em 3.5em 1em 0;
+		text-align: center;
+		justify-content: center;
 
 	}
 
 		#footer .copyright li {
-			border-left: solid 1px rgba(255, 255, 255, 0.25);
+			border-left: solid 1px rgb(255, 245, 245);
 			display: inline-block;
 			line-height: 1em;
 			margin-left: 0.75em;
@@ -2748,6 +2847,7 @@ input, select, textarea {
 
 	#main .ttt .major{
 		letter-spacing: 0.1em;
+		padding-bottom: 20px;
 		margin:auto;
 		color: #FFFAF0;
 	}	
@@ -2755,13 +2855,21 @@ input, select, textarea {
 
 	#main .ttt .major h1{
 		letter-spacing: 0.1em;
-		margin: 0 2em 0 2.5em;
+		text-align: center;
 		color: #FFFAF0;
 	}	
 
 	
 	#main .ttt p{
 		font-size: 20px;
+		text-align: justify;
+	}	
+
+	#main .ttt p strong{
+		font-size: 20px;
+		font-weight: 600;
+		color: #ffffff;
+		
 	}	
 
 
@@ -2799,6 +2907,12 @@ input, select, textarea {
 		font-size: 45px
 	}
 
+	#three p{
+		font-size: 20px;
+		font-weight: 600;
+		color: #ffffff;
+	}
+
 
 
 	/* Section two */
@@ -2812,9 +2926,9 @@ input, select, textarea {
 	
 	#two h3{
 		color: #ffd001;
-		letter-spacing:0.05em;
 		text-align: center;
-		font-size: 30px
+		letter-spacing: 0.04em;
+		font-size: 25px;
 	}
 
 /* Poptrox */
@@ -2889,7 +3003,8 @@ input, select, textarea {
 		-ms-box-sizing: content-box;
 		box-sizing: content-box;
 		-webkit-tap-highlight-color: rgba(255, 255, 255, 0);
-		background: #fff;
+		background: #f8f7f1;
+		color: rgba(255, 255, 255, 0);
 		border-radius: 0.35em;
 		box-shadow: 0 0.1em 0.15em 0 rgba(0, 0, 0, 0.15);
 		overflow: hidden;
@@ -2930,11 +3045,13 @@ input, select, textarea {
 			}
 
 		.poptrox-popup .caption {
-			background: #fff;
+			background: rgb(22, 20, 20);
 			bottom: 0;
 			cursor: default;
-			font-size: 0.9em;
+			font-size: 1.2em;
+			letter-spacing:0.05em;
 			height: 3em;
+			color:#ffd001;
 			left: 0;
 			line-height: 2.8em;
 			position: absolute;
