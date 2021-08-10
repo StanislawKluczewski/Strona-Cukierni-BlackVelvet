@@ -2018,6 +2018,10 @@ input, select, textarea {
     min-width: 100px;
 }
 
+.contct-info{
+	padding-top: 5px;
+}
+
 #contact .contact-items
 {
     width: 100%;
@@ -2047,18 +2051,30 @@ input, select, textarea {
 
 .contact-item:hover
 {
-    box-shadow: 0px 0px 5px 0 #00002c;
+    box-shadow: 0px 0px 5px 0 #ffd001;
+	transition: .5s ease box-shadow;
+	cursor: pointer;
 }
 
-.contact-item .icon
-{
+.contact-item .icon{
     width: 100px;
     margin: 0 auto;
-    padding-bottom: 10px;
+    padding-bottom: 20px;
+	padding-top: 10px;
+	background-color: rgba(250, 250, 250, 0.872);
 	display: flex;
-	justify-content: center;
+	border-radius: 0.35em;
+	justify-content: adjust;
 	text-align: center;
 }
+
+
+.contact-item .icon:hover{
+	cursor: pointer;
+    box-shadow: 0px 0px 5px 0 #ffd001;
+	transition: .5s ease box-shadow;
+}
+
 
 
 .contact-item h3{
@@ -2696,7 +2712,7 @@ input, select, textarea {
 		text-align: right;
 		top: 0;
 		width: 35%;
-		border: rgba(255, 230, 0, 0.979);
+		border:#ffd001;
 		border-style: solid;
 		border-radius: 16px 16px 16px 16px;
 	}
@@ -2742,7 +2758,7 @@ input, select, textarea {
 
 		#header h2 {
 			font-family: "Dank Mono", ui-monospace, monospace;
-			color: #fff12a;
+			color: #ffd001;
 			text-shadow: 1px 1px 1px black,
 			1px 1px 1px black;
 			font-size: 1.35em;
@@ -2780,7 +2796,7 @@ input, select, textarea {
 	}
 
 		#footer .icons a {
-			color: #fdec00;
+			color: #ffd001;
 		}
 
 
@@ -2828,7 +2844,7 @@ input, select, textarea {
 	}
 
 	#main > section {
-		border-top: solid 5px #fff017;
+		border-top: solid 5px #ffd001;
 		margin: 4em 0 0 0;
 		padding: 4em 0 0 0;
 	}
