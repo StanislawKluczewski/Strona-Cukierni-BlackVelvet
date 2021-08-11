@@ -2258,6 +2258,7 @@ input, select, textarea {
 	.ttt ul li{
 		font-size:25px;
 		list-style: none;
+		text-transform: uppercase;
 		color: #fff;
 		padding-top: 5px;
 		padding-bottom: 5px;
@@ -2914,8 +2915,9 @@ input, select, textarea {
 
 	.ttt h3{
 		color: #ffd001;
-		letter-spacing:0.1em;
+		letter-spacing:0.05em;
 		position: relative;
+		text-transform: uppercase;
 		text-align: center;
 		font-size: 45px;
 	}
@@ -3005,7 +3007,8 @@ input, select, textarea {
 
 	#two h2{
 		color: #ffd001;
-		letter-spacing:0.1em;
+		letter-spacing:0.05em;
+		text-transform:uppercase;
 		text-align: center;
 		font-size: 45px
 	}
@@ -3017,6 +3020,17 @@ input, select, textarea {
 		font-size: 25px;
 	}
 
+	
+	/* Section Three */
+
+	#three h2{
+		color: #ffd001;
+		letter-spacing:0.05em;
+		text-transform:uppercase;
+		text-align: center;
+		font-size: 45px
+	}
+	
 
 
 
