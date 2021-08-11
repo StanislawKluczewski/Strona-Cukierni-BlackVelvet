@@ -2263,6 +2263,7 @@ input, select, textarea {
 		padding-top: 5px;
 		padding-bottom: 5px;
 		text-align: center;
+		justify-content: adjust;
 	}
 
 	.ttt ul li:hover{
